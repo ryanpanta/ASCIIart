@@ -4,8 +4,16 @@ Bem-vindo ao Conversor de Imagem PGM para Arte ASCII em C! Este é um projeto si
 
 ## Como usar  
 
-**Compilação:** Antes de usar o programa, você precisa compilá-lo. Certifique-se de ter um compilador C instalado em seu sistema. No terminal, navegue até a pasta do projeto e execute o seguinte comando de compilação:  
-**`gcc ascii_art.c -o ascii_art`**
+**Compilação:** Antes de usar o programa, você precisa compilá-lo. Certifique-se de ter um compilador C instalado em seu sistema. No terminal, navegue até a pasta do projeto. Caso sua máquina esteja apta a compilar arquivos por meio do Makefile, utilze o comando:
+
+```
+make
+```  
+Caso queira compilar manualmente, execute o seguinte comando de compilação:  
+
+``` 
+gcc imagelib.c ascii_art.c -o ascii_art
+```
 
 **Execução:** Agora você está pronto para executar o programa. Use o seguinte comando no terminal:  
 **`./ascii_art <nome-imagem[.pgm]> <pixelColuna> <pixelLinha> <caracteres>`**  
